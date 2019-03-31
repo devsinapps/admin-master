@@ -1,0 +1,479 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower|Quicksand");
+body #root #Routes .Sidebar .Menu-Sidebar .Menu ul, body #root #Routes .Pages .Profile-Page-Admin-Master .container-fluid .row .col-lg-9 .row .col-lg-12 .row .col-lg-4 .card .card-body ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+
+body #root #Routes .AdminNavbar, body #root #Routes .Pages .Profile-Page-Admin-Master .container-fluid .row .col-lg-9 .row .col-lg-12 .row .col-lg-8 .card .card-body .timeline-page .card {
+  box-shadow: none; }
+
+body #root #Routes .Pages .Dashboard .container-fluid .row .col-lg-12 nav, body #root #Routes .Pages .TableForms-Admin-Master .container-fluid .row .col-lg-12 nav, body #root #Routes .Pages .Form-Admin-Master .container-fluid .row .col-lg-12 nav, body #root #Routes .Pages .Table-Admin-Master .container-fluid .row .col-lg-12 nav, body #root #Routes .Pages .Blank-Page-Admin-Master .container-fluid .row .col-lg-12 nav, body #root #Routes .Pages .Profile-Page-Admin-Master .container-fluid .row .col-lg-12 nav {
+  border-radius: 0; }
+  body #root #Routes .Pages .Dashboard .container-fluid .row .col-lg-12 nav ol, body #root #Routes .Pages .TableForms-Admin-Master .container-fluid .row .col-lg-12 nav ol, body #root #Routes .Pages .Form-Admin-Master .container-fluid .row .col-lg-12 nav ol, body #root #Routes .Pages .Table-Admin-Master .container-fluid .row .col-lg-12 nav ol, body #root #Routes .Pages .Blank-Page-Admin-Master .container-fluid .row .col-lg-12 nav ol, body #root #Routes .Pages .Profile-Page-Admin-Master .container-fluid .row .col-lg-12 nav ol {
+    background-image: linear-gradient(to right, #f1f2f6, #ffffff);
+    border-radius: 0; }
+    body #root #Routes .Pages .Dashboard .container-fluid .row .col-lg-12 nav ol li, body #root #Routes .Pages .TableForms-Admin-Master .container-fluid .row .col-lg-12 nav ol li, body #root #Routes .Pages .Form-Admin-Master .container-fluid .row .col-lg-12 nav ol li, body #root #Routes .Pages .Table-Admin-Master .container-fluid .row .col-lg-12 nav ol li, body #root #Routes .Pages .Blank-Page-Admin-Master .container-fluid .row .col-lg-12 nav ol li, body #root #Routes .Pages .Profile-Page-Admin-Master .container-fluid .row .col-lg-12 nav ol li {
+      color: black;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 20px;
+      padding: 5px; }
+
+body #root #Routes .Pages .Dashboard .container-fluid .row .col-lg-6 .card .card-header svg:nth-child(1), body #root #Routes .Pages .TableForms-Admin-Master .container-fluid .row .col-lg-12 .card .card-header svg:nth-child(1), body #root #Routes .Pages .Form-Admin-Master .container-fluid .row .col-lg-6 .card .card-header svg:nth-child(1), body #root #Routes .Pages .Table-Admin-Master .container-fluid .row .col-lg-6 .card .card-header svg:nth-child(1), body #root #Routes .Pages .Blank-Page-Admin-Master .container-fluid .row .col-lg-6 .card .card-header svg:nth-child(1) {
+  position: absolute;
+  cursor: pointer;
+  right: 20px;
+  top: 15px; }
+
+body #root #Routes .Pages .Dashboard .container-fluid .row .col-lg-6 .card .card-header svg:nth-child(2), body #root #Routes .Pages .TableForms-Admin-Master .container-fluid .row .col-lg-12 .card .card-header svg:nth-child(2), body #root #Routes .Pages .Form-Admin-Master .container-fluid .row .col-lg-6 .card .card-header svg:nth-child(2), body #root #Routes .Pages .Table-Admin-Master .container-fluid .row .col-lg-6 .card .card-header svg:nth-child(2), body #root #Routes .Pages .Blank-Page-Admin-Master .container-fluid .row .col-lg-6 .card .card-header svg:nth-child(2) {
+  position: absolute;
+  cursor: pointer;
+  right: 50px;
+  top: 15px; }
+
+body {
+  font-family: 'Quicksand', sans-serif; }
+  body #root {
+    position: relative; }
+    body #root #Routes .Sidebar {
+      position: fixed;
+      background-color: #0a3d62;
+      height: 100vh;
+      width: 200px;
+      left: 0;
+      color: #dfe4ea;
+      overflow: hidden;
+      transition: all .3s ease-in-out; }
+      body #root #Routes .Sidebar .Menu-Sidebar .PhotoUser {
+        background-color: #0a3a5c; }
+        body #root #Routes .Sidebar .Menu-Sidebar .PhotoUser img {
+          margin: 20px;
+          height: 100px;
+          width: 100px;
+          border-radius: 50%;
+          border: 2px solid #fdfdfd; }
+        body #root #Routes .Sidebar .Menu-Sidebar .PhotoUser .card-text {
+          font-size: 20px;
+          font-family: 'Quicksand', sans-serif; }
+      body #root #Routes .Sidebar .Menu-Sidebar .Menu {
+        max-height: 300px;
+        overflow: hidden;
+        overflow-y: auto; }
+        body #root #Routes .Sidebar .Menu-Sidebar .Menu ul li {
+          padding: 20px 20px;
+          transition: all .1s; }
+          body #root #Routes .Sidebar .Menu-Sidebar .Menu ul li:hover {
+            background-color: #0a3a5c; }
+          body #root #Routes .Sidebar .Menu-Sidebar .Menu ul li svg {
+            margin-right: 5px;
+            color: #dfe4ea; }
+          body #root #Routes .Sidebar .Menu-Sidebar .Menu ul li a {
+            color: #dfe4ea;
+            font-size: 15px;
+            text-decoration: none;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: bold;
+            outline: none; }
+        body #root #Routes .Sidebar .Menu-Sidebar .Menu ul .Dropdown {
+          cursor: pointer; }
+          body #root #Routes .Sidebar .Menu-Sidebar .Menu ul .Dropdown li {
+            position: relative; }
+            body #root #Routes .Sidebar .Menu-Sidebar .Menu ul .Dropdown li svg {
+              margin-right: 5px;
+              color: #dfe4ea; }
+            body #root #Routes .Sidebar .Menu-Sidebar .Menu ul .Dropdown li a {
+              color: #dfe4ea;
+              font-size: 15px;
+              text-decoration: none;
+              font-family: 'Quicksand', sans-serif;
+              font-weight: bold;
+              outline: none; }
+            body #root #Routes .Sidebar .Menu-Sidebar .Menu ul .Dropdown li .arrowDropdown {
+              position: absolute;
+              top: 25px;
+              right: 5px;
+              transition: all .2s; }
+              body #root #Routes .Sidebar .Menu-Sidebar .Menu ul .Dropdown li .arrowDropdown.active {
+                transform: rotate(90deg); }
+          body #root #Routes .Sidebar .Menu-Sidebar .Menu ul .Dropdown .Menu-Dropdown {
+            cursor: pointer;
+            overflow: hidden;
+            transition: all .3s linear; }
+            body #root #Routes .Sidebar .Menu-Sidebar .Menu ul .Dropdown .Menu-Dropdown .Menu ul li {
+              padding-left: 45px; }
+    body #root #Routes .SidebarToggle {
+      left: -200px; }
+    body #root #Routes .AdminNavbar {
+      position: fixed;
+      left: 200px;
+      background-color: #f1f2f6;
+      right: 0;
+      transition: all .3s ease-in-out;
+      z-index: 1;
+      height: 50px; }
+      body #root #Routes .AdminNavbar a {
+        outline: none;
+        color: #2c3e50; }
+      body #root #Routes .AdminNavbar .rightMenu {
+        position: absolute;
+        right: 0; }
+        body #root #Routes .AdminNavbar .rightMenu ul li:nth-child(1) {
+          display: inline-block; }
+          body #root #Routes .AdminNavbar .rightMenu ul li:nth-child(1) a {
+            cursor: pointer;
+            color: #2c3e50; }
+          body #root #Routes .AdminNavbar .rightMenu ul li:nth-child(1) .Message {
+            position: fixed;
+            top: 60px;
+            right: 20px;
+            display: none; }
+            body #root #Routes .AdminNavbar .rightMenu ul li:nth-child(1) .Message .row .col-lg-12 .card {
+              background-color: #ffffff;
+              box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.5);
+              width: 270px; }
+              body #root #Routes .AdminNavbar .rightMenu ul li:nth-child(1) .Message .row .col-lg-12 .card::before {
+                position: absolute;
+                top: -12px;
+                left: 71px;
+                content: "";
+                border-left: 12px solid transparent;
+                border-right: 12px solid transparent;
+                border-bottom: 12px solid #ced6e0;
+                height: 0px;
+                width: 0px; }
+              body #root #Routes .AdminNavbar .rightMenu ul li:nth-child(1) .Message .row .col-lg-12 .card .card-body {
+                background-color: #0a3d62; }
+                body #root #Routes .AdminNavbar .rightMenu ul li:nth-child(1) .Message .row .col-lg-12 .card .card-body .card-title {
+                  text-align: center;
+                  font-family: 'Quicksand', sans-serif;
+                  color: #dfe4ea;
+                  font-weight: bold;
+                  font-size: 20px; }
+              body #root #Routes .AdminNavbar .rightMenu ul li:nth-child(1) .Message .row .col-lg-12 .card ul {
+                position: relative;
+                font-size: 15px; }
+                body #root #Routes .AdminNavbar .rightMenu ul li:nth-child(1) .Message .row .col-lg-12 .card ul li {
+                  border-radius: 0;
+                  font-family: 'Quicksand', sans-serif;
+                  padding: 20px;
+                  cursor: pointer;
+                  transition: all .1s; }
+                  body #root #Routes .AdminNavbar .rightMenu ul li:nth-child(1) .Message .row .col-lg-12 .card ul li:hover {
+                    opacity: .7; }
+                  body #root #Routes .AdminNavbar .rightMenu ul li:nth-child(1) .Message .row .col-lg-12 .card ul li img {
+                    position: absolute;
+                    right: 10px;
+                    height: 30px;
+                    widht: 30px;
+                    top: 0;
+                    margin-top: 15px;
+                    border-radius: 50%; }
+          body #root #Routes .AdminNavbar .rightMenu ul li:nth-child(1) .MessageClick {
+            display: block; }
+        body #root #Routes .AdminNavbar .rightMenu ul li:nth-child(2) {
+          display: inline-block; }
+          body #root #Routes .AdminNavbar .rightMenu ul li:nth-child(2) a {
+            cursor: pointer;
+            color: #2c3e50; }
+          body #root #Routes .AdminNavbar .rightMenu ul li:nth-child(2) .Profile {
+            position: fixed;
+            top: 60px;
+            right: 20px;
+            display: none; }
+            body #root #Routes .AdminNavbar .rightMenu ul li:nth-child(2) .Profile .row .col-lg-12 .card {
+              position: relative;
+              background-color: #ffffff;
+              box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.5);
+              width: 270px; }
+              body #root #Routes .AdminNavbar .rightMenu ul li:nth-child(2) .Profile .row .col-lg-12 .card::before {
+                position: absolute;
+                top: -13px;
+                left: 119px;
+                content: "";
+                border-left: 12px solid transparent;
+                border-right: 12px solid transparent;
+                border-bottom: 12px solid #ced6e0;
+                height: 0px;
+                width: 0px; }
+              body #root #Routes .AdminNavbar .rightMenu ul li:nth-child(2) .Profile .row .col-lg-12 .card .card-body .ProfileNavbar {
+                position: absolute;
+                top: 25px;
+                left: 80px;
+                height: 100px;
+                width: 100px;
+                border-radius: 50%; }
+              body #root #Routes .AdminNavbar .rightMenu ul li:nth-child(2) .Profile .row .col-lg-12 .card .card-body .card-title {
+                position: absolute;
+                top: 140px;
+                left: 50px;
+                background-image: linear-gradient(to right, #0a3d62, transparent);
+                text-align: center;
+                color: #ffffff;
+                font-family: 'Quicksand', sans-serif;
+                font-weight: bold;
+                font-size: 20px; }
+              body #root #Routes .AdminNavbar .rightMenu ul li:nth-child(2) .Profile .row .col-lg-12 .card .card-body .card-text {
+                font-family: 'Quicksand', sans-serif;
+                text-align: center; }
+              body #root #Routes .AdminNavbar .rightMenu ul li:nth-child(2) .Profile .row .col-lg-12 .card .card-body .Social_Media {
+                padding-top: 20px; }
+                body #root #Routes .AdminNavbar .rightMenu ul li:nth-child(2) .Profile .row .col-lg-12 .card .card-body .Social_Media a {
+                  display: inline; }
+                  body #root #Routes .AdminNavbar .rightMenu ul li:nth-child(2) .Profile .row .col-lg-12 .card .card-body .Social_Media a .logo_social_media {
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%; }
+          body #root #Routes .AdminNavbar .rightMenu ul li:nth-child(2) .ProfileClick {
+            display: block; }
+        body #root #Routes .AdminNavbar .rightMenu ul li:nth-child(3) {
+          display: inline-block; }
+          body #root #Routes .AdminNavbar .rightMenu ul li:nth-child(3) a {
+            color: #2c3e50;
+            cursor: pointer;
+            font-family: 'Quicksand', sans-serif; }
+    body #root #Routes .AdminNavbarToggle {
+      left: 0; }
+    body #root #Routes .Pages {
+      position: absolute;
+      right: 0;
+      left: 200px;
+      top: 70px;
+      transition: all .3s ease-in-out; }
+      body #root #Routes .Pages .Dashboard .container-fluid .row .col-lg-6 .card {
+        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.4); }
+        body #root #Routes .Pages .Dashboard .container-fluid .row .col-lg-6 .card .card-header {
+          font-family: 'Quicksand', sans-serif;
+          font-size: 17px;
+          background-image: linear-gradient(to right, #f1f2f6, #ffffff); }
+        body #root #Routes .Pages .Dashboard .container-fluid .row .col-lg-6 .card .card-body .panel-collapse {
+          overflow: hidden;
+          transition: all .3s linear; }
+      body #root #Routes .Pages .TableForms-Admin-Master .container-fluid .row .col-lg-12 .card {
+        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.4); }
+        body #root #Routes .Pages .TableForms-Admin-Master .container-fluid .row .col-lg-12 .card .card-header {
+          font-family: 'Quicksand', sans-serif;
+          font-size: 17px;
+          background-image: linear-gradient(to right, #f1f2f6, #ffffff); }
+        body #root #Routes .Pages .TableForms-Admin-Master .container-fluid .row .col-lg-12 .card .card-body .panel-collapse {
+          overflow: hidden;
+          transition: all .3s linear; }
+          body #root #Routes .Pages .TableForms-Admin-Master .container-fluid .row .col-lg-12 .card .card-body .panel-collapse div .table-responsive table {
+            border-radius: 10px; }
+            body #root #Routes .Pages .TableForms-Admin-Master .container-fluid .row .col-lg-12 .card .card-body .panel-collapse div .table-responsive table thead {
+              background-color: #0a3d62; }
+              body #root #Routes .Pages .TableForms-Admin-Master .container-fluid .row .col-lg-12 .card .card-body .panel-collapse div .table-responsive table thead tr th {
+                font-family: 'Quicksand', sans-serif;
+                color: #dfe4ea;
+                text-align: center; }
+            body #root #Routes .Pages .TableForms-Admin-Master .container-fluid .row .col-lg-12 .card .card-body .panel-collapse div .table-responsive table tbody tr td {
+              font-family: 'Quicksand', sans-serif;
+              text-align: center; }
+              body #root #Routes .Pages .TableForms-Admin-Master .container-fluid .row .col-lg-12 .card .card-body .panel-collapse div .table-responsive table tbody tr td svg:nth-child(1) {
+                position: relative;
+                cursor: pointer;
+                margin: 5px;
+                color: black;
+                transition: all .1s; }
+                body #root #Routes .Pages .TableForms-Admin-Master .container-fluid .row .col-lg-12 .card .card-body .panel-collapse div .table-responsive table tbody tr td svg:nth-child(1):hover {
+                  color: red; }
+              body #root #Routes .Pages .TableForms-Admin-Master .container-fluid .row .col-lg-12 .card .card-body .panel-collapse div .table-responsive table tbody tr td svg:nth-child(2) {
+                cursor: pointer;
+                margin: 5px; }
+      body #root #Routes .Pages .Form-Admin-Master .container-fluid .row .col-lg-6 .card {
+        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.4); }
+        body #root #Routes .Pages .Form-Admin-Master .container-fluid .row .col-lg-6 .card .card-header {
+          font-family: 'Quicksand', sans-serif;
+          font-size: 17px;
+          background-image: linear-gradient(to right, #f1f2f6, #ffffff); }
+        body #root #Routes .Pages .Form-Admin-Master .container-fluid .row .col-lg-6 .card .card-body .panel-collapse {
+          overflow: hidden;
+          transition: all .3s linear; }
+      body #root #Routes .Pages .Table-Admin-Master .container-fluid .row .col-lg-6 .card {
+        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.4); }
+        body #root #Routes .Pages .Table-Admin-Master .container-fluid .row .col-lg-6 .card .card-header {
+          font-family: 'Quicksand', sans-serif;
+          font-size: 17px;
+          background-image: linear-gradient(to right, #f1f2f6, #ffffff); }
+        body #root #Routes .Pages .Table-Admin-Master .container-fluid .row .col-lg-6 .card .card-body .panel-collapse {
+          overflow: hidden;
+          transition: all .3s linear; }
+      body #root #Routes .Pages .Blank-Page-Admin-Master .container-fluid .row .col-lg-6 .card {
+        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.4); }
+        body #root #Routes .Pages .Blank-Page-Admin-Master .container-fluid .row .col-lg-6 .card .card-header {
+          font-family: 'Quicksand', sans-serif;
+          font-size: 17px;
+          background-image: linear-gradient(to right, #f1f2f6, #ffffff); }
+        body #root #Routes .Pages .Blank-Page-Admin-Master .container-fluid .row .col-lg-6 .card .card-body .panel-collapse {
+          overflow: hidden;
+          transition: all .3s linear; }
+      body #root #Routes .Pages .Profile-Page-Admin-Master .container-fluid .row .col-lg-9 .card {
+        border-top: 2px solid #0a3d62;
+        position: relative; }
+        body #root #Routes .Pages .Profile-Page-Admin-Master .container-fluid .row .col-lg-9 .card .card-body .img-mainpage-profile {
+          position: absolute;
+          top: 100px;
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          border: 5px solid #ffffff;
+          box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5); }
+        body #root #Routes .Pages .Profile-Page-Admin-Master .container-fluid .row .col-lg-9 .card .card-body .card-title {
+          padding-top: 40px;
+          font-family: 'Quicksand', sans-serif; }
+        body #root #Routes .Pages .Profile-Page-Admin-Master .container-fluid .row .col-lg-9 .card .card-body .text-mainpage-profile {
+          font-family: 'Quicksand', sans-serif;
+          text-indent: 20px; }
+      body #root #Routes .Pages .Profile-Page-Admin-Master .container-fluid .row .col-lg-9 .row .col-lg-12 .row .col-lg-4 .card {
+        border-top: 2px solid #0a3d62; }
+        body #root #Routes .Pages .Profile-Page-Admin-Master .container-fluid .row .col-lg-9 .row .col-lg-12 .row .col-lg-4 .card .card-header {
+          text-align: center;
+          font-family: 'Quicksand', sans-serif;
+          background-color: #ffffff;
+          font-weight: bold; }
+        body #root #Routes .Pages .Profile-Page-Admin-Master .container-fluid .row .col-lg-9 .row .col-lg-12 .row .col-lg-4 .card .card-body ul li {
+          padding-bottom: 10px; }
+          body #root #Routes .Pages .Profile-Page-Admin-Master .container-fluid .row .col-lg-9 .row .col-lg-12 .row .col-lg-4 .card .card-body ul li svg {
+            margin-right: 2px; }
+          body #root #Routes .Pages .Profile-Page-Admin-Master .container-fluid .row .col-lg-9 .row .col-lg-12 .row .col-lg-4 .card .card-body ul li a {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 14px;
+            font-weight: bold; }
+      body #root #Routes .Pages .Profile-Page-Admin-Master .container-fluid .row .col-lg-9 .row .col-lg-12 .row .col-lg-8 .card {
+        position: relative;
+        border-top: 2px solid #0a3d62; }
+        body #root #Routes .Pages .Profile-Page-Admin-Master .container-fluid .row .col-lg-9 .row .col-lg-12 .row .col-lg-8 .card .card-header {
+          text-align: center;
+          font-family: 'Quicksand', sans-serif;
+          background-color: #ffffff;
+          color: #2f3542;
+          font-weight: bold; }
+        body #root #Routes .Pages .Profile-Page-Admin-Master .container-fluid .row .col-lg-9 .row .col-lg-12 .row .col-lg-8 .card .card-body .timeline-page .boximg-timeline {
+          padding: 5px; }
+          body #root #Routes .Pages .Profile-Page-Admin-Master .container-fluid .row .col-lg-9 .row .col-lg-12 .row .col-lg-8 .card .card-body .timeline-page .boximg-timeline .img-timeline {
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            float: left; }
+          body #root #Routes .Pages .Profile-Page-Admin-Master .container-fluid .row .col-lg-9 .row .col-lg-12 .row .col-lg-8 .card .card-body .timeline-page .boximg-timeline .user-timeline-page .name-timeline-page {
+            margin-left: 100px;
+            font-size: 20px;
+            position: relative;
+            top: -40px; }
+          body #root #Routes .Pages .Profile-Page-Admin-Master .container-fluid .row .col-lg-9 .row .col-lg-12 .row .col-lg-8 .card .card-body .timeline-page .boximg-timeline .user-timeline-page .card-text {
+            margin-top: 50px; }
+        body #root #Routes .Pages .Profile-Page-Admin-Master .container-fluid .row .col-lg-9 .row .col-lg-12 .row .col-lg-8 .card .card-body .timeline-page .card {
+          border: none;
+          margin-top: 10px;
+          margin-left: 10px; }
+          body #root #Routes .Pages .Profile-Page-Admin-Master .container-fluid .row .col-lg-9 .row .col-lg-12 .row .col-lg-8 .card .card-body .timeline-page .card .card-text {
+            text-indent: 15px; }
+      body #root #Routes .Pages .Profile-Page-Admin-Master .container-fluid .row .col-lg-3 .card {
+        border-top: 2px solid #0a3d62; }
+        body #root #Routes .Pages .Profile-Page-Admin-Master .container-fluid .row .col-lg-3 .card .card-header {
+          text-align: center;
+          font-family: 'Quicksand', sans-serif;
+          background-color: #ffffff;
+          color: #2f3542;
+          font-weight: bold; }
+        body #root #Routes .Pages .Profile-Page-Admin-Master .container-fluid .row .col-lg-3 .card ul li {
+          font-family: 'Quicksand', sans-serif; }
+      body #root #Routes .Pages .NotFoundPage {
+        position: fixed;
+        bottom: 0;
+        top: 0;
+        width: 100%;
+        background-color: #0a3d62;
+        overflow: auto; }
+        body #root #Routes .Pages .NotFoundPage .container .row .mx-auto .card {
+          position: relative;
+          background-color: #0a3d62;
+          border: none;
+          margin-top: 15%; }
+          body #root #Routes .Pages .NotFoundPage .container .row .mx-auto .card .card-body .card-text {
+            font-size: 70px;
+            font-family: 'Quicksand', sans-serif;
+            color: #dfe4ea; }
+          body #root #Routes .Pages .NotFoundPage .container .row .mx-auto .card .card-body a button {
+            position: relative;
+            border-radius: 0;
+            padding: 10px;
+            color: #0a3d62;
+            font-size: 20px;
+            border: none;
+            background-color: #dfe4ea;
+            transition: all .0s;
+            box-shadow: -6px 6px 0px black;
+            font-family: 'Quicksand', sans-serif; }
+            body #root #Routes .Pages .NotFoundPage .container .row .mx-auto .card .card-body a button:hover {
+              opacity: .7; }
+            body #root #Routes .Pages .NotFoundPage .container .row .mx-auto .card .card-body a button::before {
+              position: absolute;
+              left: -6px;
+              top: 0;
+              content: "";
+              height: 0;
+              widht: 0;
+              border-left: 6px solid transparent;
+              border-bottom: 6px solid black; }
+            body #root #Routes .Pages .NotFoundPage .container .row .mx-auto .card .card-body a button::after {
+              position: absolute;
+              right: 0;
+              bottom: -6px;
+              content: "";
+              height: 0;
+              widht: 0;
+              border-right: 6px solid transparent;
+              border-top: 6px solid black; }
+            body #root #Routes .Pages .NotFoundPage .container .row .mx-auto .card .card-body a button:active {
+              top: 3px;
+              left: -3px;
+              box-shadow: -3px 3px black;
+              background-color: #c1cbd7; }
+            body #root #Routes .Pages .NotFoundPage .container .row .mx-auto .card .card-body a button:active::before {
+              border-left: 3px solid transparent;
+              border-bottom: 3px solid black;
+              left: -3px; }
+            body #root #Routes .Pages .NotFoundPage .container .row .mx-auto .card .card-body a button:active::after {
+              border-right: 3px solid transparent;
+              border-top: 3px solid black;
+              bottom: -3px; }
+    body #root #Routes .Pages-Toggle {
+      left: 0; }
+
+@media screen and (max-width: 600px) {
+  body #root #Routes .Sidebar {
+    left: -200px; }
+  body #root #Routes .SidebarToggle {
+    left: 0; }
+  body #root #Routes .AdminNavbar {
+    left: 0; }
+    body #root #Routes .AdminNavbar .rightMenu ul li:nth-child(1) {
+      display: none; }
+    body #root #Routes .AdminNavbar .rightMenu ul li:nth-child(2) {
+      display: none; }
+  body #root #Routes .AdminNavbarToggle {
+    left: 200px; }
+  body #root #Routes .Pages {
+    left: 0; }
+    body #root #Routes .Pages .Dashboard .container-fluid .row .col-lg-12 nav ol li {
+      font-size: 15px; }
+    body #root #Routes .Pages .TableForms-Admin-Master .container-fluid .row .col-lg-12 nav ol li {
+      font-size: 15px; }
+    body #root #Routes .Pages .Form-Admin-Master .container-fluid .row .col-lg-12 nav ol li {
+      font-size: 15px; }
+    body #root #Routes .Pages .Table-Admin-Master .container-fluid .row .col-lg-12 nav ol li {
+      font-size: 15px; }
+    body #root #Routes .Pages .Blank-Page-Admin-Master .container-fluid .row .col-lg-12 nav ol li {
+      font-size: 15px; }
+    body #root #Routes .Pages .Profile-Page-Admin-Master .container-fluid .row .col-lg-12 nav ol li {
+      font-size: 15px; }
+    body #root #Routes .Pages .Profile-Page-Admin-Master .container-fluid .row .col-lg-3 .card {
+      border-top: 2px solid #0a3d62; }
+  body #root #Routes .Pages-Toggle {
+    left: 200px; } }
+
+@keyframes spinner {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
