@@ -1,32 +1,60 @@
 import React from 'react'
 //mdbreact
-import { MDBTable, MDBTableHead, MDBTableBody } from 'mdbreact'
+import { MDBDataTable } from 'mdbreact'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export const Table_Data = ({dataCar, formAction}) => {
-	let number = 1;
+	let no = 1;
+	const data = {
+		columns: [
+			{
+				label: 'No',
+		        field: 'no',
+		        sort: 'asc',
+		        width: 50
+	        },
+	        {
+				label: 'Car',
+		        field: 'car',
+		        sort: 'asc',
+		        width: 100
+	        },
+	        {
+				label: 'Price',
+		        field: 'price',
+		        sort: 'asc',
+		        width: 100
+	        },
+	        {
+				label: 'Country',
+		        field: 'country',
+		        sort: 'asc',
+		        width: 100
+	        }
+		],
+		rows: dataCar.map((data)=>{
+			return(
+				{
+					clickEvent: ()=>formAction('GETDATA', data),
+					no: no++,
+					car: data.car,
+					price: data.price,
+					country: data.country,
+				}
+			)
+		})
+	}
+	
 	return(
-		<MDBTable scrollX scrollY striped hover bordered maxHeight="250px"  size="sm">
-			<MDBTableHead>
-				<tr>
-					<th style={{width: "40px"}}>No</th>
-					<th> Car </th>
-					<th> Price </th>
-					<th> Country </th>
-				</tr>
-			</MDBTableHead>
-			<MDBTableBody>
-				{dataCar.map((listCar)=>{
-				return(
-					<tr key={listCar.id} onClick={()=>formAction('GETDATA', listCar)}>
-						<td> {number++} </td>
-						<td> {listCar.car} </td>
-						<td> $.{listCar.price} </td>
-						<td> {listCar.country} </td>
-					</tr>
-					)
-				})} 
-			</MDBTableBody>
-		</MDBTable>
+		<MDBDataTable
+		  scrollY
+		  scrollX
+	      striped
+	      bordered
+	      small
+	      hover
+	      maxheight='300px'
+	      data={data}
+	    />
 	)
 }

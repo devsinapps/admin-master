@@ -387,45 +387,18 @@ body{
 										@extend %collapsible-icon;
 									}
 									.card-body{
-										.panel-collapse{
-											overflow: hidden;
-											transition: all .3s linear;
-											div{
-												.table-responsive{
-													table{
-														border-radius: 10px;
-														thead{
-															background-color: #0a3d62;
-															tr{
-																th{
-																	font-family: 'Quicksand', sans-serif;
-																	color: #dfe4ea;
-																	text-align: center;
-																}
-															}
-														}
-														tbody{
-															tr{
-																td{
-																	font-family: 'Quicksand', sans-serif;
-																	text-align: center;
-																	svg:nth-child(1){
-																		position: relative;
-																		cursor: pointer;
-																		margin: 5px;
-																		color: black;
-																		transition: all .1s;
-																		&:hover{
-																			color: red;
-																		}
-																	}
-																	svg:nth-child(2){
-																		cursor: pointer;
-																		margin: 5px;
-																	}
-																}
-															}
-														}
+										table{
+											thead{
+												tr{
+													th{
+														text-align: center;
+													}
+												}
+											}
+											tbody{
+												tr{
+													td{
+
 													}
 												}
 											}
