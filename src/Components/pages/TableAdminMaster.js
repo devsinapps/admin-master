@@ -4,8 +4,7 @@ import { Link } from 'react-router-dom'
 //Reactstrap
 import { Breadcrumb, BreadcrumbItem, Table } from 'reactstrap';
 //Grid
-import { ContainerFluidRow, ColCard, Col_B } from './../grid/Custome-Grid'
-import { CollapsibleBox } from './../grid/CollapsibleBox';
+import { ContainerFluidRow, ColCard, Col_B, Collapsible } from './../grid/Custome-Grid'
 export class TableAdminMaster extends React.Component{
 	render(){
 		return(
@@ -19,7 +18,7 @@ export class TableAdminMaster extends React.Component{
 								<BreadcrumbItem active> Table Admin Master </BreadcrumbItem>
 					    </Breadcrumb>
 					</Col_B>
-					<CollapsibleBox lgCol='6' mdCol='6' smCol='6' title="Tables"> 
+					<Collapsible lgCol='6' mdCol='6' smCol='6' brCard='mb-3' tlCard="Tables"> 
 						<Table responsive>
 					        <thead>
 					          <tr>
@@ -50,8 +49,8 @@ export class TableAdminMaster extends React.Component{
 					          </tr>
 					        </tbody>
 					    </Table>
-					</CollapsibleBox>
-					<CollapsibleBox lgCol='6' mdCol='6' smCol='6' title="Dark table"> 
+					</Collapsible>
+					<Collapsible lgCol='6' mdCol='6' smCol='6' brCard='mb-3' tlCard="Dark table"> 
 						<Table dark responsive>
 					        <thead>
 					          <tr>
@@ -82,8 +81,8 @@ export class TableAdminMaster extends React.Component{
 					          </tr>
 					        </tbody>
 					    </Table>
-					</CollapsibleBox>
-					<CollapsibleBox lgCol='6' mdCol='6' smCol='6' title="Striped rows"> 
+					</Collapsible>
+					<Collapsible lgCol='6' mdCol='6' smCol='6' brCard='mb-3' tlCard="Striped rows"> 
 						<Table striped responsive>
 					        <thead>
 					          <tr>
@@ -114,8 +113,8 @@ export class TableAdminMaster extends React.Component{
 					          </tr>
 					        </tbody>
 					    </Table>
-					</CollapsibleBox>
-					<CollapsibleBox lgCol='6' mdCol='6' smCol='6' title="Bordered table"> 
+					</Collapsible>
+					<Collapsible lgCol='6' mdCol='6' smCol='6' brCard='mb-3' tlCard="Bordered table"> 
 						<Table bordered responsive>
 					        <thead>
 					          <tr>
@@ -146,8 +145,8 @@ export class TableAdminMaster extends React.Component{
 					          </tr>
 					        </tbody>
 					    </Table>
-					</CollapsibleBox>
-					<CollapsibleBox lgCol='6' mdCol='6' smCol='6' title="Borderless table"> 
+					</Collapsible>
+					<Collapsible lgCol='6' mdCol='6' smCol='6' brCard='mb-3' tlCard="Borderless table"> 
 						<Table borderless responsive>
 					        <thead>
 					          <tr>
@@ -178,8 +177,8 @@ export class TableAdminMaster extends React.Component{
 					          </tr>
 					        </tbody>
 					    </Table>
-					</CollapsibleBox>
-					<CollapsibleBox lgCol='6' mdCol='6' smCol='6' title="Hoverable rows"> 
+					</Collapsible>
+					<Collapsible lgCol='6' mdCol='6' smCol='6' brCard='mb-3' tlCard="Hoverable rows"> 
 						<Table hover responsive>
 					        <thead>
 					          <tr>
@@ -210,8 +209,8 @@ export class TableAdminMaster extends React.Component{
 					          </tr>
 					        </tbody>
 					    </Table>
-					</CollapsibleBox>
-					<CollapsibleBox lgCol='6' mdCol='6' smCol='6' title="Small table"> 
+					</Collapsible>
+					<Collapsible lgCol='6' mdCol='6' smCol='6' brCard='mb-3' tlCard="Small table"> 
 						<Table size="sm" responsive>
 					        <thead>
 					          <tr>
@@ -242,8 +241,8 @@ export class TableAdminMaster extends React.Component{
 					          </tr>
 					        </tbody>
 					    </Table>
-					</CollapsibleBox>
-					<CollapsibleBox lgCol='6' mdCol='6' smCol='6' title="Responsive table"> 
+					</Collapsible>
+					<Collapsible lgCol='6' mdCol='6' smCol='6' brCard='mb-3' tlCard="Responsive table"> 
 						<Table responsive>
 					        <thead>
 					          <tr>
@@ -286,7 +285,7 @@ export class TableAdminMaster extends React.Component{
 					          </tr>
 					        </tbody>
 					    </Table>
-					</CollapsibleBox>
+					</Collapsible>
 				</ContainerFluidRow>
 			</div>
 		)

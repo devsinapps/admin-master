@@ -1,13 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import { CollapsibleBox } from './../../grid/CollapsibleBox';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import { Table_Data } from './Table_Data'
 import { Form_Input } from './Form_Input'
 import {  Col, Breadcrumb, BreadcrumbItem } from 'reactstrap';
 //Grid
-import { ContainerFluidRow, ColCard, Col_B } from './../../grid/Custome-Grid'
+import { ContainerFluidRow, ColCard, Col_B, Collapsible } from './../../grid/Custome-Grid'
 //Mdbreact
 import { ToastContainer, toast } from 'mdbreact'
 export class TableForms extends React.Component{
@@ -168,7 +167,7 @@ export class TableForms extends React.Component{
 					        </BreadcrumbItem>
 					    </Breadcrumb>
 					</Col_B>
-					<CollapsibleBox lgCol='12' mdCol='12' smCol='12' title="Basic Form Input Table">
+					<Collapsible lgCol='12' mdCol='12' smCol='12' brCard='mb-3' tlCard="Basic Form Input Table">
 						<Table_Data 
 							dataCar={this.state.dataCar}
 							formAction={this.formAction}
@@ -185,7 +184,7 @@ export class TableForms extends React.Component{
 							   	</Col>
 							</ContainerFluidRow>
 					    </div>	
-					</CollapsibleBox>
+					</Collapsible>
 					<ToastContainer
 			          hideProgressBar={true}
 			          newestOnTop={true}

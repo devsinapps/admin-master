@@ -4,8 +4,7 @@ import { Link } from 'react-router-dom'
 //Reactstrap
 import { Row, Col, Breadcrumb, BreadcrumbItem, Button, Form, FormGroup, Label, Input, FormText, FormFeedback, CustomInput } from 'reactstrap';
 //Grid
-import { ContainerFluidRow, ColCard, Col_B } from './../grid/Custome-Grid'
-import { CollapsibleBox } from './../grid/CollapsibleBox';
+import { ContainerFluidRow, ColCard, Col_B, Collapsible } from './../grid/Custome-Grid'
 export class FormAdminMaster extends React.Component{
 	render(){
 		return(
@@ -19,7 +18,7 @@ export class FormAdminMaster extends React.Component{
 								<BreadcrumbItem active> Form Admin Master </BreadcrumbItem>
 					    </Breadcrumb>
 					</Col_B>
-					<CollapsibleBox lgCol='6' mdCol='6' smCol='6' title="Form"> 
+					<Collapsible lgCol='6' mdCol='6' smCol='6' brCard='mb-3' tlCard="Form"> 
 						<Form>
 					        <FormGroup>
 					          <Label for="exampleEmail">Email</Label>
@@ -90,8 +89,8 @@ export class FormAdminMaster extends React.Component{
 					        </FormGroup>
 					        <Button>Submit</Button>
 					      </Form>
-					</CollapsibleBox>
-					<CollapsibleBox lgCol='6' mdCol='6' smCol='6' title="Form Grid"> 
+					</Collapsible>
+					<Collapsible lgCol='6' mdCol='6' smCol='6' brCard='mb-3' tlCard="Form Grid"> 
 						<Form>
 					        <FormGroup row>
 					          <Label for="exampleEmail" sm={2}>Email</Label>
@@ -173,8 +172,8 @@ export class FormAdminMaster extends React.Component{
 					          </Col>
 					        </FormGroup>
 					      </Form>
-					</CollapsibleBox>
-					<CollapsibleBox lgCol='6' mdCol='6' smCol='6' title="Input Types"> 
+					</Collapsible>
+					<Collapsible lgCol='6' mdCol='6' smCol='6' brCard='mb-3' tlCard="Input Types"> 
 						<Form>
 					        <FormGroup>
 					          <Label for="exampleEmail">Plain Text (Static)</Label>
@@ -261,8 +260,8 @@ export class FormAdminMaster extends React.Component{
 					          </Label>
 					        </FormGroup>
 					      </Form>
-					</CollapsibleBox>
-					<CollapsibleBox lgCol='6' mdCol='6' smCol='6' title="Custom Inputs"> 
+					</Collapsible>
+					<Collapsible lgCol='6' mdCol='6' smCol='6' brCard='mb-3' tlCard="Custom Inputs"> 
 						<Form>
 					        <FormGroup>
 					          <Label for="exampleCheckbox">Checkboxes</Label>
@@ -344,8 +343,8 @@ export class FormAdminMaster extends React.Component{
 					          <CustomInput type="file" id="exampleCustomFileBrowser" name="customFile" disabled />
 					        </FormGroup>
 							</Form>
-					</CollapsibleBox>	
-					<CollapsibleBox lgCol='6' mdCol='6' smCol='6' title="Inline Form"> 
+					</Collapsible>	
+					<Collapsible lgCol='6' mdCol='6' smCol='6' brCard='mb-3' tlCard="Inline Form"> 
 						<Form inline>
 					        <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
 					          <Label for="exampleEmail" className="mr-sm-2">Email</Label>
@@ -357,8 +356,8 @@ export class FormAdminMaster extends React.Component{
 					        </FormGroup>
 					        <Button>Submit</Button>
 					      </Form>
-					</CollapsibleBox>
-					<CollapsibleBox lgCol='6' mdCol='6' smCol='6' title="Inline checkboxes"> 
+					</Collapsible>
+					<Collapsible lgCol='6' mdCol='6' smCol='6' brCard='mb-3' tlCard="Inline checkboxes"> 
 						<Form>
 					        <FormGroup check inline>
 					          <Label check>
@@ -371,8 +370,8 @@ export class FormAdminMaster extends React.Component{
 					          </Label>
 					        </FormGroup>
 					      </Form>
-					</CollapsibleBox>
-					<CollapsibleBox lgCol='6' mdCol='6' smCol='6' title="Input Sizing"> 
+					</Collapsible>
+					<Collapsible lgCol='6' mdCol='6' smCol='6' brCard='mb-3' tlCard="Input Sizing"> 
 						<Form>
 					        <Input placeholder="lg" bsSize="lg" />
 					        <Input placeholder="default" />
@@ -387,8 +386,8 @@ export class FormAdminMaster extends React.Component{
 					          <option>Small Select</option>
 					        </Input>
 					      </Form>
-					</CollapsibleBox>
-					<CollapsibleBox lgCol='6' mdCol='6' smCol='6' title="Input Grid Sizing"> 
+					</Collapsible>
+					<Collapsible lgCol='6' mdCol='6' smCol='6' brCard='mb-3' tlCard="Input Grid Sizing"> 
 						<Form>
 					        <FormGroup row>
 					          <Label for="exampleEmail" sm={2} size="lg">Email</Label>
@@ -403,8 +402,8 @@ export class FormAdminMaster extends React.Component{
 					          </Col>
 					        </FormGroup>
 							</Form>
-					</CollapsibleBox>
-					<CollapsibleBox lgCol='6' mdCol='6' smCol='6' title="Hidden Labels"> 
+					</Collapsible>
+					<Collapsible lgCol='6' mdCol='6' smCol='6' brCard='mb-3' tlCard="Hidden Labels"> 
 						<Form inline>
 					        <FormGroup>
 					          <Label for="exampleEmail" hidden>Email</Label>
@@ -418,8 +417,8 @@ export class FormAdminMaster extends React.Component{
 					        {' '}
 					        <Button>Submit</Button>
 							</Form>
-					</CollapsibleBox>
-					<CollapsibleBox lgCol='6' mdCol='6' smCol='6' title="Form Grid with Form Row"> 
+					</Collapsible>
+					<Collapsible lgCol='6' mdCol='6' smCol='6' brCard='mb-3' tlCard="Form Grid with Form Row"> 
 						<Form>
 					        <Row form>
 					          <Col md={6}>
@@ -469,8 +468,8 @@ export class FormAdminMaster extends React.Component{
 					        </FormGroup>
 					        <Button>Sign in</Button>
 					      </Form>
-					</CollapsibleBox>
-					<CollapsibleBox lgCol='6' mdCol='6' smCol='6' title="Form Validation"> 
+					</Collapsible>
+					<Collapsible lgCol='6' mdCol='6' smCol='6' brCard='mb-3' tlCard="Form Validation"> 
 						<Form>
 					       <FormGroup>
 					          <Label for="exampleEmail">Input without validation</Label>
@@ -509,7 +508,7 @@ export class FormAdminMaster extends React.Component{
 					          <FormText>Example help text that remains unchanged.</FormText>
 					        </FormGroup>
 					      </Form>
-					</CollapsibleBox>
+					</Collapsible>
 				</ContainerFluidRow>
 			</div>
 		)

@@ -1,10 +1,9 @@
 import React from 'react';
 import { BarChart, LineChart, DoghnutChart, HorizontalChart } from './../grid/Chart';
-import { CollapsibleBox } from './../grid/CollapsibleBox';
 //Reactstrap
 import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
 //Grid
-import { ContainerFluidRow, ColCard, Col_B } from './../grid/Custome-Grid'
+import { ContainerFluidRow, ColCard, Col_B, Collapsible } from './../grid/Custome-Grid'
 export class Dashboard extends React.Component{
 	render(){
 		return(
@@ -15,18 +14,18 @@ export class Dashboard extends React.Component{
 					        <BreadcrumbItem active className='BreadcrumbDashboard'>Dashboard</BreadcrumbItem>
 					    </Breadcrumb>
 					</Col_B>
-					<CollapsibleBox lgCol='6' mdCol='6' smCol='6' title="Bar Chart"> 
-							<BarChart />
-					</CollapsibleBox>
-					<CollapsibleBox lgCol='6' mdCol='6' smCol='6' title="Line Chart"> 
+					<Collapsible lgCol='6' mdCol='6' smCol='6' brCard='mb-3' tlCard="Horizontal Chart"> 
+						<BarChart />
+					</Collapsible>
+					<Collapsible lgCol='6' mdCol='6' smCol='6' brCard='mb-3' tlCard="Horizontal Chart"> 
 						<LineChart />
-					</CollapsibleBox>
-					<CollapsibleBox lgCol='6' mdCol='6' smCol='6' title="Doghnut Chart"> 
+					</Collapsible>
+					<Collapsible lgCol='6' mdCol='6' smCol='6' brCard='mb-3' tlCard="Horizontal Chart"> 
 						<DoghnutChart />
-					</CollapsibleBox>
-					<CollapsibleBox lgCol='6' mdCol='6' smCol='6' title="Horizontal Chart"> 
+					</Collapsible>
+					<Collapsible lgCol='6' mdCol='6' smCol='6' brCard='mb-3' tlCard="Horizontal Chart"> 
 						<HorizontalChart />
-					</CollapsibleBox>
+					</Collapsible>
 				</ContainerFluidRow>
 			</div>
 		)
