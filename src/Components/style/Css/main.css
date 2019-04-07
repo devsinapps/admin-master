@@ -256,6 +256,8 @@ body {
           background-image: linear-gradient(to right, #f1f2f6, #ffffff); }
         body #root #Routes .Pages .TableForms-Admin-Master .container-fluid .row .col-lg-12 .card .card-body table thead tr th {
           text-align: center; }
+        body #root #Routes .Pages .TableForms-Admin-Master .container-fluid .row .col-lg-12 .card .card-body table tbody tr td {
+          text-align: center; }
       body #root #Routes .Pages .Form-Admin-Master .container-fluid .row .col-lg-6 .card {
         box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.4); }
         body #root #Routes .Pages .Form-Admin-Master .container-fluid .row .col-lg-6 .card .card-header {

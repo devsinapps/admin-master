@@ -2,7 +2,6 @@ import React from 'react'
 import {Col, Form, FormGroup, Label, Input} from 'reactstrap';
 //mdbreact
 import { MDBBtn, MDBIcon } from 'mdbreact'
-
 export const Form_Input = ({value, formAction, handleChange}) => {
 	return(
 		<Form>

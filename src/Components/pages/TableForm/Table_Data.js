@@ -2,7 +2,6 @@ import React from 'react'
 //mdbreact
 import { MDBDataTable } from 'mdbreact'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
 export const Table_Data = ({dataCar, formAction}) => {
 	let no = 1;
 	const data = {
